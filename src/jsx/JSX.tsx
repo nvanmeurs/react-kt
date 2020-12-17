@@ -6,8 +6,8 @@ export const JSX = () => {
     <>
       <h1 style={{ color: 'darkgrey' }}>{appName}</h1>
       <p className="appDescription">Description</p>
-      {fruits.map((fruit) => (
-        <p>{fruit}</p>
+      {fruits.map((fruit, i) => (
+        <p key={i}>{fruit}</p>
       ))}
     </>
   );
